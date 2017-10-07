@@ -1,0 +1,6 @@
+framework module Pods_MovieGallery {
+  umbrella header "Pods-MovieGallery-umbrella.h"
+
+  export *
+  module * { export * }
+}
