@@ -50,22 +50,22 @@
                                     <constraint firstAttribute="height" constant="15" id="w9h-G7-Gw8"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxC-DP-PYa">
-                                <rect key="frame" x="121" y="32" width="20" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not rated yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxC-DP-PYa">
+                                <rect key="frame" x="121" y="32" width="80" height="15"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="UcF-ug-HVf"/>
+                                    <constraint firstAttribute="width" constant="80" id="UcF-ug-HVf"/>
                                     <constraint firstAttribute="height" constant="15" id="mcm-q8-KTb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Science Fiction, Adventure, Thriller" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDc-qT-SvB">
-                                <rect key="frame" x="151" y="29" width="184" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popularity : 210.4552" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDc-qT-SvB">
+                                <rect key="frame" x="211" y="29" width="124" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="trP-f2-1vg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -125,11 +125,11 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
-                <outlet property="genreLabel" destination="tDc-qT-SvB" id="Xiy-jz-dBd"/>
                 <outlet property="iconAdult" destination="wVd-38-TVB" id="jKx-67-cyk"/>
                 <outlet property="movieImageView" destination="Tma-ue-Ynm" id="ToC-IY-6oL"/>
                 <outlet property="movieTitleLabel" destination="vMP-4b-dxF" id="2Kg-th-fyT"/>
                 <outlet property="overviewLabel" destination="w4g-YB-roK" id="0CI-aK-Arf"/>
+                <outlet property="popularityLabel" destination="tDc-qT-SvB" id="3l0-uS-zxG"/>
                 <outlet property="ratingLabel" destination="UxC-DP-PYa" id="ayg-YW-Pel"/>
                 <outlet property="view" destination="pCu-E7-ffZ" id="NIL-ie-rBe"/>
             </connections>

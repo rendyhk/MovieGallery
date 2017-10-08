@@ -26,7 +26,7 @@ class MovieListViewController: UIViewController {
         }
     }
     
-    var releaseDate = Date().string()
+    var releaseDate = "2017-12-31"
     var sortBy = "release_date.desc"
 
     override func viewDidLoad() {
@@ -41,6 +41,7 @@ class MovieListViewController: UIViewController {
                           URLQueryItem(name: Constant.API.RequestKey.sortBy, value: sortBy),
                           URLQueryItem(name: Constant.API.RequestKey.page, value: String(page))
                           ]
+        
         let urlComps = NSURLComponents(string: Constant.API.URL.movieListURLString)
         urlComps?.queryItems = queryItems
         
@@ -106,7 +107,7 @@ class MovieListViewController: UIViewController {
 }
 
 //MARK: - UITableViewDataSource
-extension MovieListViewController: UITableViewDataSource {
+extension MovieListViewController: UITableViewDataSource {    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }
@@ -115,6 +116,11 @@ extension MovieListViewController: UITableViewDataSource {
         let movie = movies[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: Constant.Identifier.Cell.movieList) as! MovieListTableViewCell
         cell.imageURLString = movie.posterURL
+        cell.movieTitle = movie.title
+        cell.rating = movie.voteAverage
+        cell.popularity = movie.popularity
+        cell.overview = movie.overview
+        cell.isAdultMovie = movie.isAdult
         return cell
     }
 }

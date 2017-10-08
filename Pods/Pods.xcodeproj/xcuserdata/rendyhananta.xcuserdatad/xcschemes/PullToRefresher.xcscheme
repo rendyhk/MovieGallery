@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0ED6FE87E90C8EDF4AE8A617C37DD12C"
-               BuildableName = "UIScrollView_InfiniteScroll.framework"
-               BlueprintName = "UIScrollView-InfiniteScroll"
+               BlueprintIdentifier = "838DD45D253520F4BA1B0D9F24889AC9"
+               BuildableName = "PullToRefresh.framework"
+               BlueprintName = "PullToRefresher"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0ED6FE87E90C8EDF4AE8A617C37DD12C"
-            BuildableName = "UIScrollView_InfiniteScroll.framework"
-            BlueprintName = "UIScrollView-InfiniteScroll"
+            BlueprintIdentifier = "838DD45D253520F4BA1B0D9F24889AC9"
+            BuildableName = "PullToRefresh.framework"
+            BlueprintName = "PullToRefresher"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

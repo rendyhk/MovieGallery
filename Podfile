@@ -9,6 +9,7 @@ target 'MovieGallery' do
     pod 'Alamofire'
     pod 'AlamofireImage', '~> 3.1'
     pod 'UIScrollView-InfiniteScroll', '~> 1.0.0'
+    pod 'PullToRefresher', '~> 2.0'
 
   target 'MovieGalleryTests' do
     inherit! :search_paths

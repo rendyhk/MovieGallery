@@ -20,7 +20,7 @@ struct Movie {
     var popularity = 0.00
     var releaseDateString = ""
     var title = ""
-    var video = 0
+    var video = false
     var voteAverage = 0.0
     var voteCount = 0
     
@@ -69,7 +69,7 @@ struct Movie {
             self.popularity = popularity
         }
         
-        if let video = dictionary["video"] as? Int {
+        if let video = dictionary["video"] as? Bool {
             self.video = video
         }
         
