@@ -7,6 +7,7 @@ target 'MovieGallery' do
 
   # Pods for MovieGallery
     pod 'Alamofire'
+    pod 'AlamofireImage', '~> 3.1'
     pod 'UIScrollView-InfiniteScroll', '~> 1.0.0'
 
   target 'MovieGalleryTests' do

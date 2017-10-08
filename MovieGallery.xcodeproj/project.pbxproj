@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0B2C61DCA177354CB7C9FBF5 /* Pods_MovieGalleryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B5ED0A9F1839C9D8F9AE84 /* Pods_MovieGalleryTests.framework */; };
+		2E144F291F89A48200CC3C20 /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E144F271F89A48200CC3C20 /* MovieListTableViewCell.swift */; };
+		2E144F2A1F89A48200CC3C20 /* MovieListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E144F281F89A48200CC3C20 /* MovieListTableViewCell.xib */; };
 		2E1B1DC91F88D991005CD60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1B1DC71F88D991005CD60D /* Main.storyboard */; };
 		2E1B1DCB1F88D991005CD60D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1B1DCA1F88D991005CD60D /* Assets.xcassets */; };
 		2E1B1DCE1F88D991005CD60D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1B1DCC1F88D991005CD60D /* LaunchScreen.storyboard */; };
@@ -15,6 +17,9 @@
 		2E1B1DE41F88D991005CD60D /* MovieGalleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B1DE31F88D991005CD60D /* MovieGalleryUITests.swift */; };
 		2EACB0821F88E10400CDA32A /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EACB0811F88E10400CDA32A /* MovieListViewController.swift */; };
 		2EACB0841F88E10E00CDA32A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EACB0831F88E10E00CDA32A /* AppDelegate.swift */; };
+		2EF3A9F31F89004A00BCA189 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3A9F21F89004A00BCA189 /* Movie.swift */; };
+		2EF3A9F61F89059800BCA189 /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3A9F51F89059800BCA189 /* UIKit+Extension.swift */; };
+		2EFCB7D71F88F408006DC43E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFCB7D61F88F408006DC43E /* Constant.swift */; };
 		56B1BD6FD27A29336235CCB0 /* Pods_MovieGalleryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98640815C66F362B1C0FFC7A /* Pods_MovieGalleryUITests.framework */; };
 		FA05AAE6A6FA4B8087721FBB /* Pods_MovieGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD4A46977F3209B57835DD0 /* Pods_MovieGallery.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +44,9 @@
 /* Begin PBXFileReference section */
 		0CD3C08117ED0131A203189C /* Pods-MovieGalleryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieGalleryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieGalleryUITests/Pods-MovieGalleryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0E9EA89C08BAA0AC877D51ED /* Pods-MovieGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieGallery.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieGallery/Pods-MovieGallery.release.xcconfig"; sourceTree = "<group>"; };
+		2E144F261F89981D00CC3C20 /* MovieGallery-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MovieGallery-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E144F271F89A48200CC3C20 /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
+		2E144F281F89A48200CC3C20 /* MovieListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieListTableViewCell.xib; sourceTree = "<group>"; };
 		2E1B1DC01F88D991005CD60D /* MovieGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E1B1DC81F88D991005CD60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E1B1DCA1F88D991005CD60D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +60,9 @@
 		2E1B1DE51F88D991005CD60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EACB0811F88E10400CDA32A /* MovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		2EACB0831F88E10E00CDA32A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EF3A9F21F89004A00BCA189 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		2EF3A9F51F89059800BCA189 /* UIKit+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
+		2EFCB7D61F88F408006DC43E /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		54B7A98AD484B35EB922D99F /* Pods-MovieGalleryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieGalleryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieGalleryTests/Pods-MovieGalleryTests.release.xcconfig"; sourceTree = "<group>"; };
 		5E3FD6F45169B681278F12B6 /* Pods-MovieGalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieGalleryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieGalleryTests/Pods-MovieGalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AD4A46977F3209B57835DD0 /* Pods_MovieGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +135,9 @@
 		2E1B1DC21F88D991005CD60D /* MovieGallery */ = {
 			isa = PBXGroup;
 			children = (
+				2E144F261F89981D00CC3C20 /* MovieGallery-Bridging-Header.h */,
 				2EACB0831F88E10E00CDA32A /* AppDelegate.swift */,
+				2EF3A9F41F89057700BCA189 /* Extensions */,
 				2EACB07D1F88E10400CDA32A /* Classes */,
 				2E1B1DC71F88D991005CD60D /* Main.storyboard */,
 				2E1B1DCA1F88D991005CD60D /* Assets.xcassets */,
@@ -165,6 +178,8 @@
 		2EACB07E1F88E10400CDA32A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2EFCB7D61F88F408006DC43E /* Constant.swift */,
+				2EF3A9F21F89004A00BCA189 /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +187,8 @@
 		2EACB07F1F88E10400CDA32A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2E144F271F89A48200CC3C20 /* MovieListTableViewCell.swift */,
+				2E144F281F89A48200CC3C20 /* MovieListTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +199,15 @@
 				2EACB0811F88E10400CDA32A /* MovieListViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2EF3A9F41F89057700BCA189 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2EF3A9F51F89059800BCA189 /* UIKit+Extension.swift */,
+			);
+			name = Extensions;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		5B62F8E57D31735B5CF95E61 /* Pods */ = {
@@ -274,6 +300,7 @@
 				TargetAttributes = {
 					2E1B1DBF1F88D991005CD60D = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					2E1B1DD31F88D991005CD60D = {
@@ -315,6 +342,7 @@
 			files = (
 				2E1B1DCE1F88D991005CD60D /* LaunchScreen.storyboard in Resources */,
 				2E1B1DCB1F88D991005CD60D /* Assets.xcassets in Resources */,
+				2E144F2A1F89A48200CC3C20 /* MovieListTableViewCell.xib in Resources */,
 				2E1B1DC91F88D991005CD60D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,11 +501,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MovieGallery/Pods-MovieGallery-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/UIScrollView-InfiniteScroll/UIScrollView_InfiniteScroll.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIScrollView_InfiniteScroll.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +524,10 @@
 			files = (
 				2EACB0841F88E10E00CDA32A /* AppDelegate.swift in Sources */,
 				2EACB0821F88E10400CDA32A /* MovieListViewController.swift in Sources */,
+				2EF3A9F31F89004A00BCA189 /* Movie.swift in Sources */,
+				2EF3A9F61F89059800BCA189 /* UIKit+Extension.swift in Sources */,
+				2E144F291F89A48200CC3C20 /* MovieListTableViewCell.swift in Sources */,
+				2EFCB7D71F88F408006DC43E /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,10 +680,13 @@
 			baseConfigurationReference = D57B54594AA5C131BD829254 /* Pods-MovieGallery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MovieGallery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rendy.MovieGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieGallery/MovieGallery-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -659,10 +696,12 @@
 			baseConfigurationReference = 0E9EA89C08BAA0AC877D51ED /* Pods-MovieGallery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MovieGallery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rendy.MovieGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieGallery/MovieGallery-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
