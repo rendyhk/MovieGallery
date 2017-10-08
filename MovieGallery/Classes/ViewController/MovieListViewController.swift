@@ -8,9 +8,12 @@
 
 import UIKit
 import Alamofire
+import PullToRefresh
 
 class MovieListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    
+    let refresher = PullToRefresh()
     
     var movies: [Movie] = [] {
         didSet {
@@ -73,6 +76,9 @@ class MovieListViewController: UIViewController {
                 
                 if page == 1 {
                     self.movies = tempMovies
+                    DispatchQueue.main.async {
+                        self.tableView.endRefreshing(at: .top)
+                    }
                 } else {
                     self.movies = self.movies + tempMovies
                 }
@@ -84,6 +90,7 @@ class MovieListViewController: UIViewController {
     }
     
     private func setupView() {
+        title = "Movie Galleries"
         tableView.contentInset = UIEdgeInsets.init(top: 16, left: 0, bottom: 16, right: 0)
         tableView.register(MovieListTableViewCell.nib(), forCellReuseIdentifier: Constant.Identifier.Cell.movieList)
         
@@ -96,11 +103,21 @@ class MovieListViewController: UIViewController {
         tableView.setShouldShowInfiniteScrollHandler { (table) -> Bool in
             return self.currentPage < self.totalPage
         }
+        
+        tableView.addPullToRefresh(refresher) { 
+            self.loadData(1)
+        }
+        
+        tableView.tableFooterView = UIView()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    deinit {
+        tableView.removePullToRefresh(tableView.topPullToRefresh!)
     }
 
 
@@ -129,5 +146,13 @@ extension MovieListViewController: UITableViewDataSource {
 extension MovieListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movie = movies[indexPath.row]
+        let movieDetailVC = MovieDetailViewController(nibName: "MovieDetailViewController", bundle: nil)
+        movieDetailVC.movieID = movie.id
+        movieDetailVC.movieTitle = movie.title
+        navigationController?.pushViewController(movieDetailVC, animated: true)
     }
 }

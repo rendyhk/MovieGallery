@@ -40,7 +40,11 @@ struct Constant {
     struct Identifier {
         struct Cell {
             static let movieList = "MovieListCell"
+            static let movieDetailHeader = "MovieDetailHeaderCell"
+            static let movieDetailHeaderDescription = "MovieDetailHeaderDescriptionCell"
+            static let movieDetailSynopsis = "MovieDetailHeadeSynopsisCell"
         }
     }
 
 }
+

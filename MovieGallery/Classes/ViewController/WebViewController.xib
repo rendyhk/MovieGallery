@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A365" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewController" customModule="MovieGallery" customModuleProvider="target">
+            <connections>
+                <outlet property="indicator" destination="Cta-o1-ETL" id="ChB-oD-foR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="QUL-Bf-KMP" id="Lfp-2w-c5t"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUL-Bf-KMP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </webView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Cta-o1-ETL">
+                    <rect key="frame" x="169" y="315" width="37" height="37"/>
+                    <color key="color" red="0.94901960780000005" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QUL-Bf-KMP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Cmr-4l-go7"/>
+                <constraint firstItem="Cta-o1-ETL" firstAttribute="centerY" secondItem="QUL-Bf-KMP" secondAttribute="centerY" id="NPE-RS-4qA"/>
+                <constraint firstItem="QUL-Bf-KMP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gIX-uC-geU"/>
+                <constraint firstItem="Cta-o1-ETL" firstAttribute="centerX" secondItem="QUL-Bf-KMP" secondAttribute="centerX" id="mx9-4U-wPV"/>
+                <constraint firstAttribute="bottom" secondItem="QUL-Bf-KMP" secondAttribute="bottom" id="v3f-Gq-viI"/>
+                <constraint firstAttribute="trailing" secondItem="QUL-Bf-KMP" secondAttribute="trailing" id="yUJ-wu-jFv"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
