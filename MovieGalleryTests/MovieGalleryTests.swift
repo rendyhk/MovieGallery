@@ -21,9 +21,32 @@ class MovieGalleryTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testMovieModel() {
+        let id = 123
+        let title = "Beauty and the beast"
+        let dict = [
+            "id": id,
+            "title": title
+        ] as [String: AnyObject]
+        let movie: Movie = Movie(dictionary: dict)
+        XCTAssertEqual(title, movie.title)
+        XCTAssertEqual(String(id), movie.id)
+    }
+    
+    func testMovieDetailModel() {
+        let id = 123
+        let title = "Beauty and the beast"
+        let genreDict = [
+            "id": id,
+            "name": "comedy"
+            ] as [String: AnyObject]
+        let dict = [
+            "id": id,
+            "title": title,
+            "genres": [genreDict]
+            ] as [String: AnyObject]
+        let movie: MovieDetail = MovieDetail(dictionary: dict)
+        XCTAssertEqual("comedy", movie.genres.first?.name)
     }
     
     func testPerformanceExample() {
